@@ -1,0 +1,43 @@
+
+body{
+    background: white;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.my-background{
+    background: #8e24aa !important;
+    /* #8e24aa */   
+}
+
+.banner-background{ 
+    clip-path: polygon(50% 1%, 100% 1%, 100% 35%, 100% 100%, 80% 94%, 50% 100%, 19% 98%, 0 91%, 0% 35%, 0 1%);
+
+}
+
+.p-img{
+    border-radius: 50%;
+    border-color: light;
+    border-style: groove;
+    border-width: 1px;
+}
+
+.c-border{
+    border-color: lightblue;
+    border-style: inset;
+    border-width: 5px;
+}
+
+/*sticky position of category menu*/
+#c-fix{
+    position: fixed;
+    top:58px;
+}
+
+#c-rel{
+    position: relative;
+    left: 220px;
+}
+
+
+
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <!--User Friendly Url-->   
+
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/index</url-pattern>
+        <url-pattern>/myblog</url-pattern>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>post</servlet-name>
+        <jsp-file>/posts.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>post</servlet-name>
+        <url-pattern>/post</url-pattern>
+        <url-pattern>/Post</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>category</servlet-name>
+        <jsp-file>/category.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>category</servlet-name>
+        <url-pattern>/category</url-pattern>
+        <url-pattern>/service</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>reg</servlet-name>
+        <jsp-file>/register_page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>reg</servlet-name>
+        <url-pattern>/signup</url-pattern>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>verify</servlet-name>
+        <jsp-file>/verify.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>verify</servlet-name>
+        <url-pattern>/verify</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>login</servlet-name>
+        <jsp-file>/login_page.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>con</servlet-name>
+        <jsp-file>/contact.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>con</servlet-name>
+        <url-pattern>/contact</url-pattern>
+        <url-pattern>/Contact</url-pattern>
+        <url-pattern>/help</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>profile</servlet-name>
+        <jsp-file>/profile.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>profile</servlet-name>
+        <url-pattern>/profile</url-pattern>
+        <url-pattern>/Profile</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>showpost</servlet-name>
+        <jsp-file>/show_post.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showpost</servlet-name>
+        <url-pattern>/show_post</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>onlyshowpost</servlet-name>
+        <jsp-file>/only_show_post.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>onlyshowpost</servlet-name>
+        <url-pattern>/only_show_post</url-pattern>
+    </servlet-mapping>
+    
+    <!--end of url-->
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.blog.servlets.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.blog.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.blog.servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ContactServlet</servlet-name>
+        <servlet-class>com.blog.servlets.ContactServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditServlet</servlet-name>
+        <servlet-class>com.blog.servlets.EditServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPostServlet</servlet-name>
+        <servlet-class>com.blog.servlets.AddPostServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LikeServlet</servlet-name>
+        <servlet-class>com.blog.servlets.LikeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerifyCode</servlet-name>
+        <servlet-class>com.blog.servlets.VerifyCode</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContactServlet</servlet-name>
+        <url-pattern>/ContactServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditServlet</servlet-name>
+        <url-pattern>/EditServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPostServlet</servlet-name>
+        <url-pattern>/AddPostServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LikeServlet</servlet-name>
+        <url-pattern>/LikeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerifyCode</servlet-name>
+        <url-pattern>/VerifyCode</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_404.jsp</location>
+    </error-page>
+    <error/>
+</web-app>
